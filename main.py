@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 from supabase import create_client, Client
 
 SUPABASE_URL = "https://znophlwtwpntupvurbtz.supabase.co"
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "YOUR_SUPABASE_ANON_KEY")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpub3BobHd0d3BudHVwdnVyYnR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMzODUzNzAsImV4cCI6MjEwODk2MTM3MH0.chTlj53KGcZIGdIrM7l62bsySdpDvPcPeA9ACChTnqk")
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
